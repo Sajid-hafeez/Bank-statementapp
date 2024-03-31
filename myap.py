@@ -282,3 +282,8 @@ if uploaded_file is not None:
                 st.plotly_chart(fig)
         else:
             st.write("Please select at least one numeric column.")
+
+
+hide_streamlit_style = """  #MainMenu {visibility: hidden;} footer {visibility: hidden;}  """ 
+
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
